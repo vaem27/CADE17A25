@@ -5,16 +5,16 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float jumpForce;
+    [SerializeField] private float jumpForce;
     Rigidbody2D rb2d;
     bool isGrounded;
-    [SerializeField] GameObject Top, Bottom;
-    [SerializeField] TextMeshProUGUI puntajeTextFinal;
-    [SerializeField] GameObject EndPanel;
+    [SerializeField] private GameObject Top, Bottom;
+    [SerializeField] private TextMeshProUGUI puntajeTextFinal;
+    [SerializeField] private GameObject EndPanel;
 
     [Header("UI Buttons")]
-    [SerializeField] Button jumpButton;
-    [SerializeField] Button duckButton;
+    [SerializeField] private Button jumpButton;
+    [SerializeField] private Button duckButton;
 
     void Start()
     {
