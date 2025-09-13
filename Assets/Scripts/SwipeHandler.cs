@@ -1,71 +1,72 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SwipeHandler : MonoBehaviour
 {
     [SerializeField] private PlayerMovement player;
-    private Vector2 starTouch;
-    private Vector2 endTouch;
-    private bool swipeDetected = false;
+    [Header("Swipe Config")]
+    [SerializeField] private float swipeDistance = 50f;
+    [SerializeField] private float verticalBias = 1.5f;
 
-    [Header("SwipeConfi")]
-    [SerializeField] private float swipeDistance;
+    private Vector2 startTouch;
+    private bool isDuckingBySwipe = false;
+    private bool jumpedThisSwipe = false;
 
-    private void Update()
+    void Update()
     {
+        if (Input.touchCount == 0) return;
+
+        Touch t = Input.GetTouch(0);
+
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(t.fingerId))
+            return;
+
+        switch (t.phase)
         {
-            if (Input.touchCount > 0)
-            {
-                Touch touch = Input.GetTouch(0);
+            case TouchPhase.Began:
+                startTouch = t.position;
+                isDuckingBySwipe = false;
+                jumpedThisSwipe = false;
+                break;
 
-                switch (touch.phase)
+            case TouchPhase.Moved:
+            case TouchPhase.Stationary:
                 {
-                    case TouchPhase.Began:
-                        starTouch = touch.position;
-                        swipeDetected = true;
-                        break;
+                    Vector2 delta = t.position - startTouch;
+                    if (delta.sqrMagnitude < swipeDistance * swipeDistance) break;
 
-                    case TouchPhase.Moved:
-                        endTouch = touch.position;
-                        break;
+                    float v = Mathf.Abs(delta.y);
+                    float h = Mathf.Abs(delta.x);
 
-                    case TouchPhase.Ended:
-                        if (swipeDetected)
+                    if (v < h * verticalBias) break;
+
+                    if (delta.y > 0f)
+                    {
+                        if (!jumpedThisSwipe)
                         {
-                            DetectSwipe();
-                            swipeDetected = false;
+                            player.OnJumpButtonPressed();
+                            jumpedThisSwipe = true;
                         }
-                        break;
+                    }
+                    else
+                    {
+                        if (!isDuckingBySwipe && player.IsGrounded)
+                        {
+                            player.OnDuckButtonDown();
+                            isDuckingBySwipe = true;
+                        }
+                    }
+                    break;
                 }
-            }
+
+            case TouchPhase.Ended:
+            case TouchPhase.Canceled:
+                if (isDuckingBySwipe)
+                {
+                    player.OnDuckButtonUp();
+                    isDuckingBySwipe = false;
+                }
+                break;
         }
     }
-    void DetectSwipe()
-        {
-            Vector2 swipeDelta = endTouch - starTouch;
-
-            if (swipeDelta.magnitude < swipeDistance) return;
-
-            float vertical = Mathf.Abs(swipeDelta.y);
-            float horizontal = Mathf.Abs(swipeDelta.x);
-
-            if (vertical > horizontal)
-            {
-                if (swipeDelta.y > 0)
-                {
-                    player.OnJumpButtonPressed();
-                    Debug.Log("Up");
-                }
-                else
-                {
-                    player.OnDuckButtonDown();
-                    Debug.Log("Down");
-                    Invoke(nameof(ResetDuck), 0.5f);
-                }
-            }
-        }
-
-        void ResetDuck()
-        {
-            player.OnDuckButtonUp();
-        }
 }

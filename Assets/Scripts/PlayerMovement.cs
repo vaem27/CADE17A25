@@ -16,12 +16,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Button jumpButton;
     [SerializeField] private Button duckButton;
 
+    [Header("Anim")]
+    [SerializeField] private playerAnimations anim;
+    public bool IsGrounded => isGrounded;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
 
-        jumpButton.gameObject.AddComponent<JumpButtonHandler>().Init(this);
-        duckButton.gameObject.AddComponent<DuckButtonHandler>().Init(this);
+        anim?.SetCrouching(false);
+
+        //jumpButton.gameObject.AddComponent<JumpButtonHandler>().Init(this);
+        //duckButton.gameObject.AddComponent<DuckButtonHandler>().Init(this);
     }
 
     void Update()
@@ -29,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded) Jump();
         if (Input.GetKeyDown(KeyCode.S)) Duck();
         if (Input.GetKeyUp(KeyCode.S)) Stand();
+
+        bool shouldRun = isGrounded && !Bottom.activeSelf;
+        anim?.SetRunning(shouldRun);
     }
 
     public void OnJumpButtonPressed()
@@ -50,18 +59,24 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        Debug.Log("Jump Animation ON");
+        anim?.PlayJump();
     }
 
     void Duck()
     {
         Bottom.SetActive(true);
         Top.SetActive(false);
+        Debug.Log("Crouch Animation ON");
+        anim?.SetCrouching(true);
     }
-
+    
     void Stand()
     {
         Top.SetActive(true);
         Bottom.SetActive(false);
+        Debug.Log("Crouch Animation OFF");
+        anim?.SetCrouching(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -80,9 +95,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Death Animation ON");
             int p = FindFirstObjectByType<Puntaje>().GetPuntaje();
             puntajeTextFinal.text = "" + p;
             EndPanel.SetActive(true);
+            anim?.PlayDeath();
             Time.timeScale = 0;
         }
     }
