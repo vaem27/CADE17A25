@@ -8,16 +8,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     Rigidbody2D rb2d;
     [SerializeField] bool isGrounded;
+    [SerializeField] bool isDead = false;
     [SerializeField] private GameObject Top, Bottom;
     [SerializeField] private TextMeshProUGUI puntajeTextFinal;
     [SerializeField] private GameObject EndPanel;
 
-    [Header("UI Buttons")]
-    [SerializeField] private Button jumpButton;
-    [SerializeField] private Button duckButton;
+    //[Header("UI Buttons")]
+    //[SerializeField] private Button jumpButton;
+    //[SerializeField] private Button duckButton;
 
     [Header("Anim")]
     [SerializeField] private playerAnimations anim;
+    [SerializeField] private Animator animator;
     public bool IsGrounded => isGrounded;
 
     void Start()
@@ -93,14 +95,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isDead) return;
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            isDead = true;
+
             Debug.Log("Death Animation ON");
+
             int p = FindFirstObjectByType<Puntaje>().GetPuntaje();
-            puntajeTextFinal.text = "" + p;
-            anim?.PlayDeath();
+            puntajeTextFinal.text = p.ToString();
+            animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+            animator.Play("Death", 0, 0f);
+
             EndPanel.SetActive(true);
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
         }
     }
 }

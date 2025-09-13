@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9339622, b: 0.9339622, a: 0.9019608}
+  m_Color: {r: 1, g: 0.9339622, b: 0.9339622, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1573,13 +1573,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   jumpForce: 9
   isGrounded: 0
+  isDead: 0
   Top: {fileID: 604814905}
   Bottom: {fileID: 1636574410}
   puntajeTextFinal: {fileID: 740949792}
   EndPanel: {fileID: 609989225}
-  jumpButton: {fileID: 0}
-  duckButton: {fileID: 0}
   anim: {fileID: 969854085}
+  animator: {fileID: 969854084}
 --- !u!95 &969854084
 Animator:
   serializedVersion: 7
