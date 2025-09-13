@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float jumpForce;
     Rigidbody2D rb2d;
-    bool isGrounded;
+    [SerializeField] bool isGrounded;
     [SerializeField] private GameObject Top, Bottom;
     [SerializeField] private TextMeshProUGUI puntajeTextFinal;
     [SerializeField] private GameObject EndPanel;
@@ -98,8 +98,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Death Animation ON");
             int p = FindFirstObjectByType<Puntaje>().GetPuntaje();
             puntajeTextFinal.text = "" + p;
-            EndPanel.SetActive(true);
             anim?.PlayDeath();
+            EndPanel.SetActive(true);
             Time.timeScale = 0;
         }
     }
