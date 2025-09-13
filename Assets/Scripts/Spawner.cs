@@ -22,9 +22,8 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        timerText.text = "Tiempo: " + Math.Round(timer, 2);
-
+        timer += Time.deltaTime; 
+        timerText.text = "Tiempo: " + Mathf.FloorToInt(timer);
     }
 
     void Spawn()
