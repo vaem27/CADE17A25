@@ -1943,7 +1943,7 @@ MonoBehaviour:
   Enemies:
   - {fileID: 7943769282369255949, guid: 010445698ede44b46aef3289423ad77e, type: 3}
   - {fileID: 8142378032555994437, guid: af9eaf91ffb7a274fb3f78cb73e987a5, type: 3}
-  intervalo: 2
+  intervalo: 4
   Spawns:
   - {fileID: 677453017}
   - {fileID: 992896200}
