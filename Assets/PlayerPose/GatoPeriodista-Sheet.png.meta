@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: da4b0ab32aa4661428e6e262cdc16adb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1881355587740594508
+    second: GatoPeriodista-Sheet_0
+  - first:
+      213: 3606120234941814991
+    second: GatoPeriodista-Sheet_1
+  - first:
+      213: -2285143238641726708
+    second: GatoPeriodista-Sheet_2
+  - first:
+      213: -6361992199581021932
+    second: GatoPeriodista-Sheet_3
+  - first:
+      213: -7059510318882554296
+    second: GatoPeriodista-Sheet_4
+  - first:
+      213: 6633273249693882814
+    second: GatoPeriodista-Sheet_5
+  - first:
+      213: -7088060313213121818
+    second: GatoPeriodista-Sheet_6
+  - first:
+      213: -6396052573357939687
+    second: GatoPeriodista-Sheet_7
+  - first:
+      213: -5807301581972979403
+    second: GatoPeriodista-Sheet_8
+  - first:
+      213: 4086327955303404682
+    second: GatoPeriodista-Sheet_9
+  - first:
+      213: -2061037076528807286
+    second: GatoPeriodista-Sheet_10
+  - first:
+      213: 9069444233007024840
+    second: GatoPeriodista-Sheet_11
+  - first:
+      213: -583635457331869775
+    second: GatoPeriodista-Sheet_12
+  - first:
+      213: -2339095186468817925
+    second: GatoPeriodista-Sheet_13
+  - first:
+      213: 5732966011290928954
+    second: GatoPeriodista-Sheet_14
+  - first:
+      213: 4215404256095180733
+    second: GatoPeriodista-Sheet_15
+  - first:
+      213: 7048456572553173357
+    second: GatoPeriodista-Sheet_16
+  - first:
+      213: -3414214935284439269
+    second: GatoPeriodista-Sheet_17
+  - first:
+      213: -8897216150276677928
+    second: GatoPeriodista-Sheet_18
+  - first:
+      213: 6780081204769411001
+    second: GatoPeriodista-Sheet_19
+  - first:
+      213: 5162483717189108389
+    second: GatoPeriodista-Sheet_20
+  - first:
+      213: 6581247312464083712
+    second: GatoPeriodista-Sheet_21
+  - first:
+      213: -4827119788288887882
+    second: GatoPeriodista-Sheet_22
+  - first:
+      213: 7979767466456201911
+    second: GatoPeriodista-Sheet_23
+  - first:
+      213: 2198241543877463840
+    second: GatoPeriodista-Sheet_24
+  - first:
+      213: -1239814183882630190
+    second: GatoPeriodista-Sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41797f60faeb1a10800000000000000
+      internalID: 1881355587740594508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84efcc294c4970e90800000000000000
+      internalID: -7059510318882554296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a824790e2b9b563e0800000000000000
+      internalID: -2061037076528807286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca499a5a732ddd70800000000000000
+      internalID: 9069444233007024840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7496fc4a286e7f0800000000000000
+      internalID: -583635457331869775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf333ba225dd98fd0800000000000000
+      internalID: -2339095186468817925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 63
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37426476369f8f40800000000000000
+      internalID: 5732966011290928954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7193536df108a30800000000000000
+      internalID: 4215404256095180733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GatoPeriodista-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a28bc9b693d4a740800000000000000
+      internalID: 5162483717189108389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0e5525e639bc82a409b1874a362df9bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GatoPeriodista-Sheet_0: 1881355587740594508
+      GatoPeriodista-Sheet_1: 3606120234941814991
+      GatoPeriodista-Sheet_10: -2061037076528807286
+      GatoPeriodista-Sheet_11: 9069444233007024840
+      GatoPeriodista-Sheet_12: -583635457331869775
+      GatoPeriodista-Sheet_13: -2339095186468817925
+      GatoPeriodista-Sheet_14: 5732966011290928954
+      GatoPeriodista-Sheet_15: 4215404256095180733
+      GatoPeriodista-Sheet_16: 7048456572553173357
+      GatoPeriodista-Sheet_17: -3414214935284439269
+      GatoPeriodista-Sheet_18: -8897216150276677928
+      GatoPeriodista-Sheet_19: 6780081204769411001
+      GatoPeriodista-Sheet_2: -2285143238641726708
+      GatoPeriodista-Sheet_20: 5162483717189108389
+      GatoPeriodista-Sheet_21: 6581247312464083712
+      GatoPeriodista-Sheet_22: -4827119788288887882
+      GatoPeriodista-Sheet_23: 7979767466456201911
+      GatoPeriodista-Sheet_24: 2198241543877463840
+      GatoPeriodista-Sheet_25: -1239814183882630190
+      GatoPeriodista-Sheet_3: -6361992199581021932
+      GatoPeriodista-Sheet_4: -7059510318882554296
+      GatoPeriodista-Sheet_5: 6633273249693882814
+      GatoPeriodista-Sheet_6: -7088060313213121818
+      GatoPeriodista-Sheet_7: -6396052573357939687
+      GatoPeriodista-Sheet_8: -5807301581972979403
+      GatoPeriodista-Sheet_9: 4086327955303404682
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
