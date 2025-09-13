@@ -31,7 +31,7 @@ public class SpawnerLeft : MonoBehaviour
         int random = UnityEngine.Random.Range(0, Enemies.Length);
 
         GameObject temporalEnemy = Instantiate(Enemies[random], Spawns[i].transform.position, Quaternion.identity);
-        temporalEnemy.GetComponent<Rigidbody2D>().linearVelocityX = 3 + (timer / 5);
+        temporalEnemy.GetComponent<Rigidbody2D>().linearVelocityX = 3 + (timer / 3);
         float r = UnityEngine.Random.Range(1, 3);
         intervalo = r;
         Invoke("Spawn", intervalo);
